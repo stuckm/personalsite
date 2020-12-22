@@ -261,7 +261,7 @@ article img {
   align-items: center;
   padding: var(--padding) calc(var(--padding) * 2);
   background-color: var(--button-alternate-color);
-  color: var(--button-color);
+  color: black;
   border-radius: 12px;
   text-decoration: none;
   appearance: none;
@@ -270,8 +270,7 @@ article img {
   line-height: 1;
   transition: background 0.3s linear;
   &:hover {
-    background-color: var(--button-color);
-    color: var(--button-alternate-color);
+    color: white;
   }
   &.-outline {
     color: var(--primary-color);
