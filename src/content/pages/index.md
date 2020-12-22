@@ -9,4 +9,4 @@ cta:
   ctaLink: /blog
 ---
 
-Hello! My name is Michael and I am a Front-End Developer.
+My name is Michael and I am a Front-End Developer.

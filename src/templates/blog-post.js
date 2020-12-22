@@ -51,7 +51,7 @@ const Post = ({ data, pageContext }) => {
 
   let props = {
     previous,
-    next
+    next,
   }
 
   return (
@@ -73,8 +73,6 @@ const Post = ({ data, pageContext }) => {
           {Image ? (
             <Img
               fluid={Image}
-              objectPosition="50% 50%"
-              objectFit="cover"
               alt={frontmatter.title + " - Featured image"}
               className="featured-image"
             />
@@ -109,7 +107,7 @@ export const pageQuery = graphql`
         featuredImage {
           childImageSharp {
             fluid(
-              maxWidth: 1980
+              maxWidth: 1400
               maxHeight: 768
               quality: 100
               srcSetBreakpoints: [350, 700, 1050, 1400]

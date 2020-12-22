@@ -11,16 +11,16 @@ const Thanks = () => (
     <div
       className="wrapper"
       style={{
-        textAlign: "center"
+        textAlign: "center",
       }}
     >
       <RiCheckboxCircleLine
         style={{
           fontSize: "128px",
-          color: "var(--primary-color)"
+          color: "var(--primary-color)",
         }}
       />
-      <h1>Got your message!</h1>
+      <h1>Message received!</h1>
       <p>I will get back to you shortly.</p>
       <Link to="/" className="button">
         <RiArrowLeftSLine className="icon -left" />
