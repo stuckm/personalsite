@@ -9,9 +9,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const result = await graphql(`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-      ) {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {
           node {
             id
@@ -55,7 +53,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
 
     // Count blog posts.
-    if (post.node.frontmatter.template === 'blog-post') {
+    if (post.node.frontmatter.template === "blog-post") {
       blogPostsCount++
     }
   })
@@ -66,7 +64,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
-      path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+      path: i === 0 ? `/projects` : `/projects/${i + 1}`,
       component: blogList,
       context: {
         limit: postsPerPage,
@@ -76,7 +74,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
-
 }
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
