@@ -5,24 +5,24 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri"
 const MenuItems = [
   {
     path: "/",
-    title: "Home"
+    title: "Home",
   },
   {
     path: "/about",
-    title: "About"
+    title: "About",
   },
   {
-    path: "/blog",
-    title: "Projects"
+    path: "/projects",
+    title: "Projects",
   },
   {
     path: "/contact",
-    title: "Contact"
+    title: "Contact",
   },
   {
     path: "/resume",
-    title: "Resume"
-  }
+    title: "Resume",
+  },
 ]
 
 const ListLink = props => (
@@ -41,7 +41,7 @@ class Navigation extends React.Component {
 
   handleToggleClick() {
     this.setState(state => ({
-      showMenu: !state.showMenu
+      showMenu: !state.showMenu,
     }))
   }
 
