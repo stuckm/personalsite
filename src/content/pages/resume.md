@@ -1,7 +1,7 @@
 ---
-template: about-page
+template: resume-page
 slug: /resume
 title: Resume
 ---
 
-![Resume](/assets/resume.jpg "Resume")
+![Resume](/assets/resume.jpg)
