@@ -93,7 +93,7 @@ class BlogIndex extends React.Component {
       blogSlug,
       currentPage,
       isLast,
-      nextPage,
+      nextPage
     }
 
     return (
@@ -103,6 +103,7 @@ class BlogIndex extends React.Component {
           description={
             "Stackrole base blog page " + currentPage + " of " + numPages
           }
+          url="/projects"
         />
         <h1>Projects</h1>
         <div className="grids col-1 sm-2 lg-3">{posts}</div>
