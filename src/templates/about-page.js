@@ -42,8 +42,7 @@ const AboutPage = ({ data }) => {
   return (
     <Layout className="page">
       <SEO title={frontmatter.title} description={excerpt} />
-      <div className="home-banner grids col-1 sm-2">
-        <h1 class="title">{frontmatter.title}</h1>
+      <div className="grids col-1 sm-2">
         <div>
           {Image ? (
             <Img
@@ -56,6 +55,7 @@ const AboutPage = ({ data }) => {
           )}
         </div>
         <div>
+          <h1 class="title">{frontmatter.title}</h1>
           <div
             className="description"
             dangerouslySetInnerHTML={{ __html: html }}
