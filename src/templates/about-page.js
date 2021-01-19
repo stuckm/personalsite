@@ -16,13 +16,12 @@ export const pageQuery = graphql`
         featuredImage {
           childImageSharp {
             fluid(
-              maxWidth: 1200
-              maxHeight: 768
+              maxWidth: 480
+              maxHeight: 380
               quality: 100
-              srcSetBreakpoints: [350, 700, 1050, 1400]
+              srcSetBreakpoints: [960, 1440]
             ) {
               ...GatsbyImageSharpFluid
-              ...GatsbyImageSharpFluidLimitPresentationSize
             }
             sizes {
               src
@@ -43,23 +42,25 @@ const AboutPage = ({ data }) => {
   return (
     <Layout className="page">
       <SEO title={frontmatter.title} description={excerpt} />
-      <section className="article-header">
-        <h1>{frontmatter.title}</h1>
-      </section>
-
-      {Image ? (
-        <Img
-          fluid={Image}
-          objectFit="cover"
-          objectPosition="50% 50%"
-          alt={frontmatter.title + " - Featured image"}
-          className="featured-image"
-        />
-      ) : (
-        ""
-      )}
-      <div className="wrapper">
-        <article dangerouslySetInnerHTML={{ __html: html }} />
+      <div className="home-banner grids col-1 sm-2">
+        <div>
+          <h1 class="title">{frontmatter.title}</h1>
+          <div
+            className="description"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
+        <div>
+          {Image ? (
+            <Img
+              fluid={Image}
+              alt={frontmatter.title + " - Featured image"}
+              className="featured-image"
+            />
+          ) : (
+            ""
+          )}
+        </div>
       </div>
     </Layout>
   )
