@@ -42,7 +42,7 @@ const AboutPage = ({ data }) => {
   return (
     <Layout className="page">
       <SEO title={frontmatter.title} description={excerpt} />
-      <div className="grids col-1 sm-2">
+      <div className="about-page grids col-1 sm-2">
         <div>
           {Image ? (
             <Img

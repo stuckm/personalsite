@@ -42,10 +42,6 @@ const ResumePage = ({ data }) => {
   return (
     <Layout className="page">
       <SEO title={frontmatter.title} description={excerpt} />
-      <section className="article-header">
-        <h1>{frontmatter.title}</h1>
-      </section>
-
       {Image ? (
         <Img
           fluid={Image}
