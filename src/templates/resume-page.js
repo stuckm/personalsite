@@ -5,6 +5,8 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import downloadFile from "..static/assets/resume.pdf"
+
 export const pageQuery = graphql`
   query theQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -43,13 +45,15 @@ const ResumePage = ({ data }) => {
     <Layout className="page">
       <SEO title={frontmatter.title} description={excerpt} />
       {Image ? (
-        <Img
-          fluid={Image}
-          objectFit="cover"
-          objectPosition="50% 50%"
-          alt={frontmatter.title + " - Featured image"}
-          className="featured-image"
-        />
+        <a href={downloadFile}>
+          <Img
+            fluid={Image}
+            objectFit="cover"
+            objectPosition="50% 50%"
+            alt={frontmatter.title + " - Featured image"}
+            className="featured-image"
+          />
+        </a>
       ) : (
         ""
       )}
