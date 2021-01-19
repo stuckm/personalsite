@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import downloadFile from "..static/assets/resume.pdf"
+import downloadFile from "../../static/assets/resume.pdf"
 
 export const pageQuery = graphql`
   query theQuery($id: String!) {
