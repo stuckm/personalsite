@@ -48,8 +48,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       context: {
         id,
         previous,
-        next,
-      },
+        next
+      }
     })
 
     // Count blog posts.
@@ -64,14 +64,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
-      path: i === 0 ? `/projects/` : `/projects/${i + 1}`,
+      path: i === 0 ? `/projects` : `/projects/${i + 1}`,
       component: blogList,
       context: {
         limit: postsPerPage,
         skip: i * postsPerPage,
         numPages,
-        currentPage: i + 1,
-      },
+        currentPage: i + 1
+      }
     })
   })
 }
@@ -83,7 +83,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: `slug`,
-      value: slug,
+      value: slug
     })
   }
 }

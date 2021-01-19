@@ -6,7 +6,7 @@ tagline: Front-End Developer
 featuredImage: /assets/a.jpg
 cta:
   ctaText: Projects
-  ctaLink: /blog
+  ctaLink: /projects
 ---
 
-My name is Michael and I am a Front-End Developer.
+I am a Tempe based Front-End Developer.
