@@ -76,7 +76,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const { currentPage, numPages } = this.props.pageContext
-    const blogSlug = "/projects/"
+    const blogSlug = "/blog/"
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
     const prevPage =
@@ -103,7 +103,6 @@ class BlogIndex extends React.Component {
           description={
             "Stackrole base blog page " + currentPage + " of " + numPages
           }
-          url="/projects"
         />
         <h1>Projects</h1>
         <div className="grids col-1 sm-2 lg-3">{posts}</div>
