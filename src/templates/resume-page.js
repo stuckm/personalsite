@@ -22,7 +22,6 @@ export const pageQuery = graphql`
               srcSetBreakpoints: [350, 700, 1050, 1400]
             ) {
               ...GatsbyImageSharpFluid
-              ...GatsbyImageSharpFluidLimitPresentationSize
             }
             sizes {
               src
