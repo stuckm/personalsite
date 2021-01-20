@@ -62,15 +62,13 @@ const ResumePage = ({ data }) => {
         })}
         <article dangerouslySetInnerHTML={{ __html: html }} />
         {Image ? (
-          <a href="http://www.google.com">
-            <Img
-              fluid={Image}
-              objectFit="cover"
-              objectPosition="50% 50%"
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image"
-            />
-          </a>
+          <Img
+            fluid={Image}
+            objectFit="cover"
+            objectPosition="50% 50%"
+            alt={frontmatter.title + " - Featured image"}
+            className="featured-image"
+          />
         ) : (
           ""
         )}
