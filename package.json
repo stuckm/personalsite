@@ -1,15 +1,11 @@
 {
-  "name": "@stackrole/gatsby-starter-foundation",
-  "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
+  "name": "Mikes Portfolio",
+  "description": "Showcase Projects",
   "version": "1.0.0",
-  "author": "Stackrole <stackrole@gmail.com>",
-  "license": "MIT",
+  "author": "Michael Stuck <michaelleestuck@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stackrole/gatsby-starter-foundation.git"
-  },
-  "bugs": {
-    "url": "https://github.com/stackrole/gatsby-starter-foundation/issues"
+    "url": "https://github.com/stuckm/personalsite"
   },
   "scripts": {
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
