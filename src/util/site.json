@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "Michael Stuck",
+    "titleTemplate": "%s",
+    "description": "Michael Stuck || Front-End Developer",
+    "siteUrl": "https://stuckm.com/",
+    "image": "/assets/bracket.png",
+    "iconimage": "/assets/bracket.png"
+  },
+  "ga": "UA-XXXXXXXXX-X"
+}
