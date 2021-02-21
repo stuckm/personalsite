@@ -42,7 +42,7 @@ export default function BlogListHome() {
                   title
                   featuredImage {
                     childImageSharp {
-                      fluid(maxWidth: 750, maxHeight: 380, quality: 100) {
+                      fluid(maxWidth: 1100, maxHeight: 650, quality: 100) {
                         ...GatsbyImageSharpFluid
                       }
                     }

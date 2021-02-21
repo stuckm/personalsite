@@ -10,6 +10,7 @@ const PostCard = ({ data }) => (
           fluid={data.frontmatter.featuredImage.childImageSharp.fluid}
           alt={data.frontmatter.title + " - Featured image"}
           className="featured-image"
+          imgStyle={{ objectFit: "contain" }}
         />
       </Link>
     ) : (

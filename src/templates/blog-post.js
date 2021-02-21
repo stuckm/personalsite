@@ -75,6 +75,7 @@ const Post = ({ data, pageContext }) => {
               fluid={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image"
+              imgStyle={{ objectFit: "contain" }}
             />
           ) : (
             ""
@@ -107,8 +108,8 @@ export const pageQuery = graphql`
         featuredImage {
           childImageSharp {
             fluid(
-              maxWidth: 1400
-              maxHeight: 768
+              maxWidth: 1750
+              maxHeight: 1050
               quality: 100
               srcSetBreakpoints: [350, 700, 1050, 1400]
             ) {
