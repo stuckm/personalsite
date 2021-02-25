@@ -9,4 +9,4 @@ cta:
   ctaLink: /blog
 ---
 
-Web developer based in Tempe, Arizona. Specalizing in modern front-end technologies.
+Web developer based in Tempe, Arizona. Specializing in modern front-end technologies.
