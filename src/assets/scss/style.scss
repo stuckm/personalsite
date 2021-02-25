@@ -239,7 +239,20 @@ article iframe {
 article img {
   max-width: 100%;
 }
+
 .blog-post-content {
+  flex: 2;
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+.blog-post-deets {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   max-width: 70ch;
   margin: 0 auto;
   padding: 20px;
@@ -314,8 +327,8 @@ article img {
     border-radius: 12px;
   }
 }
-.about-page{
-align-items: center;
+.about-page {
+  align-items: center;
 }
 
 // Contact page

@@ -9,4 +9,4 @@ cta:
   ctaLink: /blog
 ---
 
-I am a Tempe based Front-End Developer.
+Web developer based in Tempe, Arizona. Specalizing in modern front-end technologies.

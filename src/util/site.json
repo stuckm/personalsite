@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "Michael Stuck",
-    "titleTemplate": "%s",
-    "description": "Michael Stuck || Front-End Developer",
-    "siteUrl": "https://stuckm.com/",
+    "titleTemplate": "%s Front-End Developer",
+    "description": "Michael Stuck, Web Developer from Tempe Arizona",
+    "siteUrl": "https://stuckm.com",
     "image": "/assets/bracket.png",
     "iconimage": "/assets/bracket.png"
   },

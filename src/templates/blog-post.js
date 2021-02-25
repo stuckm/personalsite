@@ -1,7 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
+import {
+  RiArrowRightLine,
+  RiArrowLeftLine,
+  RiGithubFill,
+  RiComputerLine,
+} from "react-icons/ri"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -86,6 +91,17 @@ const Post = ({ data, pageContext }) => {
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+        <div className="blog-post-deets">
+          <Link to={frontmatter.site}>
+            <RiComputerLine style={{ fontSize: "50px" }} /> <br />
+            <span>Demo</span>
+          </Link>
+          <Link to={frontmatter.code}>
+            <RiGithubFill style={{ fontSize: "50px" }} />
+            <br />
+            Code
+          </Link>
+        </div>
       </article>
       {(previous || next) && <Pagination {...props} />}
     </Layout>
@@ -105,6 +121,9 @@ export const pageQuery = graphql`
         slug
         title
         description
+        tech
+        site
+        code
         featuredImage {
           childImageSharp {
             fluid(
